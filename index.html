@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <main>
+        <h1>Login</h1>
+        <form action="main.html" method="get">
+        
+            <label for="username">Enter Your Username: 
+                 <input type="text" id="username" name="username" placeholder="Username..." required>
+            </label>
+
+            <label for="password">Enter Your Password: 
+                <input type="password" id="password" name="password" required pattern="\d{8}" inputmode="numeric">
+            </label>
+            <label>
+                <input type="checkbox" id="keep" name="keep-logged" value="keep-logged">
+                <label for="keep">Keep Me Logged In</label>
+            </label>
+            <button type="submit">Log In</button>
+            <button type="reset">Reset</button>
+        </form>
+     </main>
+</body>
+</html>

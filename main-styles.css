@@ -1,0 +1,127 @@
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma Geneva, Verdana, sans-serif;
+    
+}
+header {
+    text-align: center;
+    font-family: 'Isometra', Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+img {
+    border: 5px double rgb(210, 105, 30);
+    border-radius: 10px;
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+}
+.rule {
+    background-color: beige;
+    text-align: left;
+    width: 75%;
+    border-radius: 10px;
+    margin: 30px auto;
+    border: 25px solid beige;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 0 5px 3px burlywood;
+}
+.rule h3 {
+    text-align: center;
+}
+.isometra-regular {
+  font-family: "Isometra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+ li {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 15%;
+    box-shadow: 3px 3px 5px #000;
+ }
+ footer {
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 7px;
+    text-align: center;
+    font-style: italic;
+ }
+ a {
+    width: fit-content;
+    height: 20px;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto;
+
+    display: block;
+ }
+/* বন্ধ থাকা অবস্থায় (See More...) */
+.more::before {
+    content: 'see more...';
+    margin: 5px;
+    color: #007bff; /* ইচ্ছামতো কালার দিন */
+    cursor: pointer;
+}
+
+/* খোলা অবস্থায় (See Less...) */
+.more-dec[open] .more::before {
+    content: 'see less...';
+    color: darkmagenta;
+}
+.teams {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-bottom: 10px;
+    
+}
+.team {
+    width: 32%;
+    height: 30%;
+    padding: 10px;
+    background-color: antiquewhite;
+    box-shadow: 0 0 5px 3px beige;
+    margin-left: 10px;
+    
+}
+.team li {
+    display: block;
+    width:fit-content;
+}
+.red {
+    background-color: #ff0101;
+    color: white;
+    padding: 5px;
+    border-radius: 40%;
+    text-align: center;
+    display: inline-block;
+    width: 70%;
+    height: fit-content;
+}
+.red a {
+    background-color: #ff0101;
+    text-decoration: none;
+    color: #fff;
+    height: fit-content;
+    display:inline-block;
+}
+*{
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+}
+#dev {
+    font-size: large;
+    font-weight: 800;
+}
