@@ -22,11 +22,11 @@ img {
     border-radius: 10px;
     margin: 30px auto;
     border: 25px solid beige;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 20px;
+    padding-left:0%;
     box-shadow: 0 0 5px 3px burlywood;
 }
-.rule h3 {
+.rule h3, .team h3 {
     text-align: center;
 }
 .isometra-regular {
@@ -47,8 +47,10 @@ ol {
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 10px;
-    width: 15%;
+    width: fit-content;
+    height: fit-content;
     box-shadow: 3px 3px 5px #000;
+
  }
  footer {
     background-color: blueviolet;
@@ -59,15 +61,16 @@ ol {
  }
  a {
     width: fit-content;
-    height: 20px;
+    height: fit-content;
+    text-decoration: none;
     background-color: dodgerblue;
     border-radius: 5px;
     padding: 10px;
-    margin: 10px auto;
-
+    margin: 20px auto;
+    color: #000;
     display: block;
  }
-/* বন্ধ থাকা অবস্থায় (See More...) */
+/* বন্ধ থাকা অবস্থায় (See More...) */
 .more::before {
     content: 'see more...';
     margin: 5px;
@@ -82,14 +85,16 @@ ol {
 }
 .teams {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     justify-content:space-evenly;
     margin-bottom: 10px;
+    flex-wrap: wrap;
     
 }
 .team {
-    width: 32%;
-    height: 30%;
+    width: 300px;
+    height: 50%;
+    border-radius: 10px;
     padding: 10px;
     background-color: antiquewhite;
     box-shadow: 0 0 5px 3px beige;
@@ -111,17 +116,19 @@ ol {
     height: fit-content;
 }
 .red a {
-    background-color: #ff0101;
+    background-color: transparent;
     text-decoration: none;
     color: #fff;
     height: fit-content;
     display:inline-block;
+    width:70%;
+    margin: 0 auto;
 }
 *{
-    box-sizing: content-box;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 #dev {
     font-size: large;
-    font-weight: 800;
-}
+    font-weight: 900;
+    color: darkmagenta;}
