@@ -1,12 +1,24 @@
 body {
-    background-color: white;
-    font-family: 'Segoe UI', Tahoma Geneva, Verdana, sans-serif;
+    background-color:azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 header {
     text-align: center;
     font-family: 'Isometra', Arial, Helvetica, sans-serif;
-    padding: 20px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 1000;
+    width: 100%;
+    transition:background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+    border-radius: 10px;
+
 }
 img {
     border: 5px double rgb(210, 105, 30);
@@ -47,7 +59,7 @@ ol {
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 10px;
-    width: fit-content;
+    width: 100px;
     height: fit-content;
     box-shadow: 3px 3px 5px #000;
 
@@ -99,7 +111,7 @@ ol {
     background-color: antiquewhite;
     box-shadow: 0 0 5px 3px beige;
     margin-left: 10px;
-    
+    margin-bottom: 10px;
 }
 .team li {
     display: block;
